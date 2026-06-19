@@ -15,9 +15,24 @@ if choice == "1"
 if subject in study_hours:
    study_hours[subject] += hours
 else:
-  study_hours[subjects] = hours
+  study_hours[subject] = hours
 
 print(f"{hours} hours added to {subject}!")
 
 elif choice = = "2":
- print("
+ print("\n=== YOUR PROGESS ===")
+
+total_hours = 0
+
+for subject,hours in study_hours.items():
+  print(f{subject}:{hours} hours")
+  total_hours += hours
+
+print(f"\nTotal Study Time: {total_hours} hours")
+
+elif choice = = "3"
+ print("Goodbye! Keep studying Temmy!)
+  break
+
+else:
+ print("Invalid option")
